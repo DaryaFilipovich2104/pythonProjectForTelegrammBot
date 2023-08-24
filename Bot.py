@@ -1,5 +1,4 @@
 import telebot
-import aiogram
 from telebot import types  # телебот для создания меню
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
 from telebot.types import Message
@@ -56,7 +55,7 @@ def bot_message(msg: Message):
             # markup.add(InlineKeyboardButton("Назад ", callback_data="back"))
             bot.send_message(msg.chat.id,
                              text="Данный чат-бот по поиску фильмов был разработан в качестве курсовой работы. Мы обязательно продолжим работу по его совершенствованию")
-            bot.send_photo(msg.chat.id,photo=open('static/img/over.png','rb'))
+            bot.send_photo(msg.chat.id, photo=open('static/img/over.png','rb'))
 
 @bot.callback_query_handler(func=lambda call: call.data == "comedy")
 def comedy(call: types.CallbackQuery):
