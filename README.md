@@ -10,5 +10,7 @@
 * модуль requests
 * kinopoisk unofficial api (kinopoisk.dev)
 
+Kinopoisk.dev API находится под лицензией MIT.
+
     На стадии разработки:
 база данных для хранения кинофильмов с привязкой ссылок на киносайты
